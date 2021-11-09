@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
    styleUrls: ['./chores-list.component.css']
 })
 export class ChoresListComponent implements OnInit {
-   chores = ['Empty dishwasher', 'Complete LaunchCode prep work', 'Buy groceries'];
+   chores = ['Wash the dishes', 
+   'Complete LaunchCode prep work', 
+   'Buy groceries',
+   'Fold the laundry',
+   'Feed the dog',
+   'Water the plants',
+   'Check the mail'];
 
    constructor() { }
 
