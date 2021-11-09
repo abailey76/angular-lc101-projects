@@ -8,11 +8,13 @@
   ul {
       color:cornflowerblue;
       font-style: italic;
-      font-size: 1.3vw;
+      font-size: 1.5vw;
   }
   
   h3 {
       color:blue;
      text-decoration: underline;
+     font-weight: bold;
+     text-align: center;
      font-weight: bold;
   }
