@@ -10,3 +10,12 @@ p {
     font-weight: bold;
     color:red;
 }
+
+div {
+    text-align: center;
+}
+
+img {
+    width: 20%;
+    height: auto;
+}
