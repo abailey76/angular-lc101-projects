@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class FavLinksComponent implements OnInit {
   favLinks = [
     'DuckDuckGo',
-    'Slashdot: News for Nerds']
+    'Slashdot: News for Nerds',
+    'Reddit',
+    '']
   constructor() { }
 
   ngOnInit() {

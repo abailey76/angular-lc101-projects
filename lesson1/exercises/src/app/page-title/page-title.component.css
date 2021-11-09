@@ -5,3 +5,8 @@ h1 {
     text-decoration: underline;
     color:red;
 }
+p {
+    text-align: center;
+    font-weight: bold;
+    color:red;
+}
