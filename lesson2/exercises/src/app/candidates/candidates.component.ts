@@ -1,3 +1,4 @@
+import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -20,10 +21,17 @@ export class CandidatesComponent implements OnInit {
 
   constructor() { }
 
+  
   ngOnInit() {
   }
 
   // Code the addToCrew function here:
+  addToCrew(person: object) {
+    //TODO: complete the function!
+    
+
+  }
+
 
 
   // BONUS: Code the changeMissionName function here:
