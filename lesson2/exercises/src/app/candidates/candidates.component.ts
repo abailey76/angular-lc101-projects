@@ -1,4 +1,3 @@
-import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CandidatesComponent implements OnInit {
    missionName = "LaunchCode Moonshot"
-
+ 
    candidates = [
     {name: 'Rusty Rutabaga', data: {age: 5, mass: '0.75 kg', sidekick: 'Blake'}, image: 'assets/images/Blake.png'},
     {name: 'Tessa Tortoise', data: {age: 126, mass: '113 kg', sidekick: 'Sally'}, image: 'assets/images/Sally.png'},
@@ -18,22 +17,31 @@ export class CandidatesComponent implements OnInit {
   ];
 
   crew = [];
+  // takes a candidate and adds them to the crew array
+  addToCrew(candidate: object) {
+    // if the candidate is not already in the crew array,
+    // then add that candidate into the crew array
+    // if the crew array includes the candidate
+    // don't push the candidate
+    if (!this.crew.includes(candidate)) {
+      this.crew.push(candidate);
+    }
+    console.log(this.crew);
+  }
+
+  checkSendMissionBtn(candidate: object): boolean {
+    const isCandidateDefined = candidate !== undefined;
+    const isCandidateNotInCrew = !this.crew.includes(candidate);
+    const isCrewFull = this.crew.length < 3;
+    return isCandidateDefined && isCandidateNotInCrew && isCrewFull;
+  }
 
   constructor() { }
 
-  
   ngOnInit() {
   }
 
   // Code the addToCrew function here:
-  addToCrew(selectedCrew: object) {
-    //TODO: complete the function!
-    if(!this.crew.includes(selectedCrew)) {
-      this.crew.push(selectedCrew)
-    }
-    
-  }
-
 
 
   // BONUS: Code the changeMissionName function here:
