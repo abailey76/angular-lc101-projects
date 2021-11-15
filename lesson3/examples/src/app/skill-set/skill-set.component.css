@@ -6,3 +6,18 @@ h3 {
 .skills {
    color: green;
 }
+
+.ol-style {
+   color: black;
+   text-align: center;
+   list-style-type: upper-roman;
+}
+
+.p-style {
+   color: black;
+   text-align: center;
+}
+
+.special {
+   background-color: blue;
+}
