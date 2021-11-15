@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Exercises: Angular Lesson 3';
 
+  astronautChatter: string = ""
+
   color = 'green';
   height = 0;
   width = 0;
@@ -15,7 +17,7 @@ export class AppComponent {
   takeOffEnabled = true;
 
   gutterCheck(width, height) {
-    if (width > 260000 || width < 0 || height < 0 || height > 340000) {
+    if (width > 480000 || width < 0 || height < 0 || height > 550000) {
       this.color = 'orange';
     } else {
       this.color = 'blue';
@@ -51,6 +53,7 @@ export class AppComponent {
       this.width = 0;
       this.message = 'Shuttle in flight.';
       this.takeOffEnabled = false;
+      this.astronautChatter = "Houston, we have liftoff!"
     }
   }
 
@@ -63,6 +66,7 @@ export class AppComponent {
     this.takeOffEnabled = true;
     rocketImage.style.bottom = '0px';
     rocketImage.style.left = '0px';
+    this.astronautChatter = "Touch down. Houston, it's good to be home!"
   }
 
   handleMissionAbort(rocketImage) {
@@ -75,6 +79,7 @@ export class AppComponent {
       this.takeOffEnabled = true;
       rocketImage.style.bottom = '0px';
       rocketImage.style.left = '0px';
+      this.astronautChatter = "Houston, we had a problem!"
     }
   }
 }

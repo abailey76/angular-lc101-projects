@@ -1,11 +1,12 @@
 .justify-content-center {
     text-align: center; 
-    height: 400px; 
+    height: 600px; 
     width: 100%;
 }
 
 .container-header {
     text-align: center;
+    font-weight: bolder;
 }
 
 .container-left {
@@ -27,12 +28,32 @@ img {
 .container-right {
     text-align: center; 
     display: inline-block;
+    
 }
 
 .container-right > p { 
     display: inline-block;
+    text-align: center; 
 }
 
 .container-control-buttons {
     text-align: center;
+}
+
+#leftButton {
+    margin: 20px;
+    font-weight: bold;
+}
+
+#rightButton {
+    margin: 20px;
+    font-weight: bold;
+}
+
+#upButton {
+    font-weight: bold;
+}
+
+#downButton {
+    font-weight: bold;
 }
